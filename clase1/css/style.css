@@ -1,0 +1,11 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  color: red;
+  font-size: 150px;
+  padding: 50px;
+  border: solid black 15px;
+}
