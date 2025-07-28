@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#principal {
+  background-color: blue;
+  display: block;
+
+  height: 100vh;
+  width: 100vw;
+}
+#cuadros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#circulos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+
+.cuadro {
+  background-color: aqua;
+  padding: 20px;
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+}
+
+.circulo {
+  background-color: yellow;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadroP {
+  background-color: brown;
+
+  width: 50%;
+  height: 50%;
+}
