@@ -6,15 +6,18 @@
 
 #principal {
   background-color: blue;
-  display: block;
-
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  justify-content: center;
+  align-items: center;
   width: 100vw;
 }
 #cuadros {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: bisque;
 }
 
 #circulos {
@@ -22,6 +25,8 @@
   justify-content: center;
   flex-wrap: nowrap;
   gap: 20px;
+  background-color: aquamarine;
+  width: 60%;
 }
 
 .cuadro {
@@ -35,7 +40,7 @@
 .circulo {
   background-color: yellow;
   border-radius: 50%;
-  width: 200px;
+  width: 200px; 
   height: 200px;
   display: flex;
   justify-content: center;
