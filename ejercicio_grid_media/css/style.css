@@ -38,7 +38,7 @@
 }
 #links {
   grid-area: links;
-  background-color: orange;
+  background-color: aqua;
 }
 #footer {
   grid-area: footer;
