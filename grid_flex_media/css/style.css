@@ -132,11 +132,12 @@ main {
 body {
   display: grid;
   grid-template-columns: 100vw;
-  grid-template-rows: 100vh 40vh 200vh 100vh;
+  grid-template-rows: 100vh 40vh 180vh 40vh;
   grid-template-areas:
     "container"
     "numeros"
-    "service";
+    "service"
+    "footer";
 }
 
 .container {
@@ -245,7 +246,7 @@ img {
   height: 100%;
   border-radius: 50%;
 }
-
+/* 
 #service {
   grid-area: service;
   display: grid;
@@ -259,23 +260,120 @@ img {
   border: solid 1px black;
   width: 100vw;
   height: 100vh;
+} */
+
+#service {
+  grid-area: service;
+  display: flex;
+  flex-direction: column;
 }
 
 .offering {
-  grid-area: offering;
-  background-color: rgb(254, 1, 1);
-  border: solid 1px black;
+  /* grid-area: offering; */
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(216, 228, 239);
+  width: 100%;
+  height: 60vh;
+  position: relative;
 }
-.textoffering {
-  grid-area: textoffering;
-  background-color: rgb(207, 218, 0);
+
+.content-offering {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  height: 100%;
 }
+
+.img-offering {
+  width: 30%;
+  height: 100;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
 .imagen {
-  grid-area: imagen;
-  background-color: rgb(0, 255, 0);
+  width: 100%;
+  height: 60%;
+  background-color: rgb(79, 150, 222);
+  position: absolute;
+  bottom: 15%;
 }
+
+.titulo-offering {
+  font-size: 2em;
+  color: white;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.titulo-offering-cont {
+  font-size: 1.5em;
+  color: rgb(79, 150, 222);
+}
+
+.textoffering {
+  /* grid-area: textoffering; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2em;
+  height: 33%;
+}
+
+.text-offering-cont {
+  width: 50%;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(79, 150, 222);
+  font-size: 1.2em;
+}
+
 .select {
-  grid-area: select;
-  background-color: rgb(0, 0, 255);
-  border: solid 1px black;
+  /* grid-area: select; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  position: relative;
+}
+.btn {
+  width: 25%;
+  height: 25%;
+  background-color: black;
+  position: absolute;
+  left: 25%;
+  top: 20%;
+}
+
+#mid-offering {
+  background-color: rgb(211, 216, 226);
+}
+
+footer {
+  grid-area: footer;
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 479px) and (max-width: 1029px) {
+  header {
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

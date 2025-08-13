@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 10vh;
+  width: 100%;
+  background-color: #faf7f3;
+  display: flex;
+  align-items: center; /* y  en row*/
+  justify-content: flex-start; /* x en row */
+}
+#icon-star {
+  width: 10%;
+  margin-left: 5%;
+}
+
+#titulo {
+  width: 40%;
+  height: 50%;
+  background-color: #706355;
+}
+
+#icon-menu {
+  width: 40%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#section-A {
+  height: 100vh;
+  width: 100vw;
+  background-color: #dee8f0;
+}
+
+.number {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-number {
+  display: flex;
+  flex-direction: column;
+}
+
+#number-1 {
+  background-color: #7e9ac2;
+}
+
+#number-2 {
+  background-color: #a6b8d6;
+}
+
+#number-3 {
+  background-color: #d7e1f0;
+}
+
+#number-4 {
+  background-color: #bac6e0;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: #706355;
+}
+
+.content-news {
+  width: 100%;
+  height: 50%;
+  background-color: #f0eeec;
+}
+
+.content-img {
+  width: 100%;
+  height: 50%;
+  background-color: #7b9bc2;
+}
+
+/* circulos  */
+.circle-number {
+  border: solid 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 20%;
+  max-width: 100px;
+  aspect-ratio: 1 /1;
+}
+/*  */
+
+footer {
+  width: 100vw;
+  height: 100vh;
+  background-color: #8dacce;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact {
+  width: 70%;
+  height: 35%;
+  background-color: #aec2db;
+}
+
+#links-contact {
+  height: 35%;
+  width: 70%;
+}
+
+aside {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.social-media {
+  border: solid 5px white;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 10%;
+  aspect-ratio: 1 /1;
+}
+
+#copyright {
+  height: 20%;
+}
