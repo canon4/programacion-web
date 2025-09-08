@@ -1,0 +1,15 @@
+body {
+  background-color: rebeccapurple;
+}
+
+.container {
+  background-color: rgb(21, 212, 177);
+}
+
+.col {
+  border: solid black 5px;
+}
+
+.col-7 {
+  border: solid black 5px;
+}

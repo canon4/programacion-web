@@ -1,0 +1,30 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box {
+  width: 300px;
+  height: 300px;
+  background-color: blueviolet;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  /* por defecto el gradioente es desde botton */
+  /* background-image: linear-gradient(to top, yellow 30%, blue, red); */
+  /* background-image: linear-gradient(45deg, yellow 30%, blue, red); */
+  /* background-image: radial-gradient(circle at top left, yellow, blue, red); */
+  /* transform: translate(400px, 400px); */
+  /* transform: rotatey(180deg);  girar por defecto en x*/
+  /* transform: skew(20deg, 10deg);  para estirar o efecto de girar*/
+  /* transform: scale(1.5); para agrandar o achicar */
+  /* transition: 2s;
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 20px black;
+    background-color: blue;
+  } */
+}
