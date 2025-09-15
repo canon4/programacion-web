@@ -143,6 +143,22 @@ switch (fruit) {
     break;
 }
 
+//json
+
+let jsonString = '{"name": "John", "age": 30}'; // string en formato JSON
+let persona = {
+  name: "John",
+  age: 30,
+};
+let jsonObject = JSON.parse(jsonString); // convierte el string JSON en un objeto JavaScript
+
+let jsonPersona = JSON.parse(persona); // convierte el objeto JavaScript en un string JSON
+
+let persona2 = {
+  nombre: "juan",
+  apellido: "ramirez",
+};
+
 // eventos
 // document.getElementById("myButton").addEventListener("click", function () {
 //   alert("Button clicked!");
