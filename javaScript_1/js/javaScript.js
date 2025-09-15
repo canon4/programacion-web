@@ -79,8 +79,17 @@ console.log(person.name);
 console.log(person.age);
 console.log(person.greet());
 
+// funciones
+function greet(name) {
+  return "Hello " + name;
+}
+
+console.log(greet("Alice"));
+console.log(greet("Bob"));
+
 //funciones flecha: las funciones flecha son una forma mas corta de escribir funciones anonimas
 const add = (x, y) => x + y;
+
 console.log(add(2, 3));
 
 // funciones anonimas:  son funciones que no tienen un nombre
@@ -88,6 +97,16 @@ const multiply = function (x, y) {
   return x * y;
 };
 console.log(multiply(2, 3));
+
+//funcion de orden superior: son funciones que reciben como parametro otra funcion
+const higherOrderFunction = (func, x, y) => func(x, y);
+
+console.log(higherOrderFunction(add, 2, 3));
+console.log(higherOrderFunction(multiply, 2, 3));
+
+//map
+const squaredArray = array.map((num) => num ** 2);
+console.log(squaredArray);
 
 // estructuras de control
 if (a > b) {
@@ -110,13 +129,19 @@ array.forEach(function (element, index) {
   console.log("Elemento en el índice " + index + ": " + element);
 });
 
-// funciones
-function greet(name) {
-  return "Hello " + name;
+// ejemplo de switch
+let fruit = "apple";
+switch (fruit) {
+  case "apple":
+    console.log("It's an apple");
+    break;
+  case "banana":
+    console.log("It's a banana");
+    break;
+  default:
+    console.log("It's another fruit");
+    break;
 }
-
-console.log(greet("Alice"));
-console.log(greet("Bob"));
 
 // eventos
 // document.getElementById("myButton").addEventListener("click", function () {
