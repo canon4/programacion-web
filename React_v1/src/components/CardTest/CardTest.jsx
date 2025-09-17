@@ -10,14 +10,10 @@ const CardTets = ({ data }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardActionArea>
-        <CardMedia
-          component="img"
-          image={(data = data.url)}
-          alt="green iguana"
-        />
+        <CardMedia component="img" image={data.url} alt="green iguana" />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            <h1>{(data = data.nombre)}</h1>
+            {data.nombre}
           </Typography>
           <Typography variant="body2" sx={{ color: "text.secondary" }}>
             Lizards are a widespread group of squamate reptiles, with over 6,000

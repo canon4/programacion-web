@@ -1,0 +1,16 @@
+header {
+  height: 100px;
+  background-color: #141414;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  gap: 20px;
+}
+
+#js-icon {
+  height: 50px;
+  width: 50px;
+  background-color: #efd81d;
+  border-radius: 10px;
+}
